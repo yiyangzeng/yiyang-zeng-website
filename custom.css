@@ -176,6 +176,10 @@ body:has(.yz-site) .page-section:first-child {
   overflow: visible;
 }
 
+.yz-theme-band__narrow {
+  display: none;
+}
+
 /* Layout: sidebar + main */
 .yz-layout {
   max-width: 1120px;
@@ -205,7 +209,7 @@ body:has(.yz-site) .page-section:first-child {
   overflow-y: visible;
 }
 
-.yz-layout--about .yz-theme-band svg {
+.yz-layout--about .yz-theme-band__wide {
   display: block;
   width: calc((100% + 48px) / 1.26);
   min-width: 0;
@@ -737,24 +741,21 @@ body:has(.yz-site) .page-section:first-child {
   .yz-layout--about .yz-theme-band {
     padding: 18px 0 22px;
     margin: 0;
-    overflow: hidden;
-    min-height: calc((100vw - 32px) * 136 / 1120 * 1.12);
+    overflow: visible;
   }
 
-  .yz-layout--about .yz-theme-band svg {
+  .yz-theme-band__wide {
+    display: none;
+  }
+
+  .yz-layout--about .yz-theme-band__narrow {
     display: block;
     width: 100%;
     min-width: 0;
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    transform: scale(1.12);
-    transform-origin: top center;
-  }
-
-  .yz-layout--about .yz-theme-band .lbl {
-    font-size: 14.5px;
-    letter-spacing: 0.05em;
+    transform: none;
   }
 
   .yz-layout--about .yz-sidebar,
@@ -898,18 +899,6 @@ body:has(.yz-site) .page-section:first-child {
 
   .yz-masthead-dot {
     display: none;
-  }
-
-  .yz-layout--about .yz-theme-band {
-    min-height: calc((100vw - 32px) * 136 / 1120 * 1.1);
-  }
-
-  .yz-layout--about .yz-theme-band svg {
-    transform: scale(1.1);
-  }
-
-  .yz-layout--about .yz-theme-band .lbl {
-    font-size: 14px;
   }
 
   .yz-layout--about .yz-intro,
