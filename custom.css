@@ -626,6 +626,10 @@ body:has(.yz-site) .page-section:first-child {
   text-underline-offset: 2px;
 }
 
+.yz-bracketed-link {
+  white-space: nowrap;
+}
+
 .yz-work-links a:hover {
   text-decoration-color: var(--yz-accent);
 }
@@ -731,31 +735,25 @@ body:has(.yz-site) .page-section:first-child {
   }
 
   .yz-layout--about .yz-theme-band {
-    padding: 28px 0 30px;
-    overflow-x: auto;
-    overflow-y: visible;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
-
-  .yz-layout--about .yz-theme-band::-webkit-scrollbar {
-    display: none;
+    padding: 24px 0 28px;
+    overflow: visible;
+    min-height: calc((100vw - 32px) * 136 / 1120 * 1.9);
   }
 
   .yz-layout--about .yz-theme-band svg {
     display: block;
-    width: calc(100% / 1.62);
+    width: calc(100% / 1.9);
     min-width: 0;
     max-width: none;
     max-height: none;
     margin: 0;
-    transform: scale(1.62);
+    transform: scale(1.9);
     transform-origin: top left;
   }
 
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 15px;
-    letter-spacing: 0.06em;
+    font-size: 16px;
+    letter-spacing: 0.05em;
   }
 
   .yz-layout--about .yz-sidebar,
@@ -809,10 +807,8 @@ body:has(.yz-site) .page-section:first-child {
     font-size: 16px;
   }
 
-  .yz-work-links a {
-    display: inline-block;
-    padding: 2px 0;
-    margin-right: 4px;
+  .yz-work-links .yz-bracketed-link + .yz-bracketed-link::before {
+    content: " ";
   }
 
   .yz-layout--about .yz-sidebar {
@@ -831,26 +827,26 @@ body:has(.yz-site) .page-section:first-child {
   }
 
   .yz-layout--about .yz-portrait img {
-    width: min(240px, 68vw);
-    height: min(240px, 68vw);
+    width: min(280px, 82vw);
+    height: min(280px, 82vw);
   }
 
   .yz-layout--about .yz-name {
     width: 100%;
-    font-size: 32px;
+    font-size: 34px;
     margin: 16px 0 8px;
   }
 
   .yz-layout--about .yz-affil {
     width: 100%;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.55;
   }
 
   .yz-layout--about .yz-intro,
   .yz-layout--about .yz-bio {
-    font-size: 22px;
-    line-height: 1.62;
+    font-size: 23.5px;
+    line-height: 1.64;
   }
 
   .yz-layout--about .yz-contact {
@@ -896,22 +892,26 @@ body:has(.yz-site) .page-section:first-child {
     display: none;
   }
 
+  .yz-layout--about .yz-theme-band {
+    min-height: calc((100vw - 32px) * 136 / 1120 * 1.75);
+  }
+
   .yz-layout--about .yz-theme-band svg {
-    width: calc(100% / 1.52);
-    transform: scale(1.52);
+    width: calc(100% / 1.75);
+    transform: scale(1.75);
   }
 
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .yz-layout--about .yz-portrait img {
-    width: min(228px, 72vw);
-    height: min(228px, 72vw);
+    width: min(268px, 86vw);
+    height: min(268px, 86vw);
   }
 
   .yz-layout--about .yz-intro,
   .yz-layout--about .yz-bio {
-    font-size: 21px;
+    font-size: 22.5px;
   }
 }
