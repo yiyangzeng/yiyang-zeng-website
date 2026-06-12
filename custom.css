@@ -735,9 +735,10 @@ body:has(.yz-site) .page-section:first-child {
   }
 
   .yz-layout--about .yz-theme-band {
-    padding: 20px 0 24px;
+    padding: 18px 0 22px;
     margin: 0;
     overflow: hidden;
+    min-height: calc((100vw - 32px) * 136 / 1120 * 1.12);
   }
 
   .yz-layout--about .yz-theme-band svg {
@@ -746,13 +747,14 @@ body:has(.yz-site) .page-section:first-child {
     min-width: 0;
     max-width: 100%;
     height: auto;
-    margin: 0;
-    transform: none;
+    margin: 0 auto;
+    transform: scale(1.12);
+    transform-origin: top center;
   }
 
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 13.5px;
-    letter-spacing: 0.055em;
+    font-size: 14.5px;
+    letter-spacing: 0.05em;
   }
 
   .yz-layout--about .yz-sidebar,
@@ -898,8 +900,16 @@ body:has(.yz-site) .page-section:first-child {
     display: none;
   }
 
+  .yz-layout--about .yz-theme-band {
+    min-height: calc((100vw - 32px) * 136 / 1120 * 1.1);
+  }
+
+  .yz-layout--about .yz-theme-band svg {
+    transform: scale(1.1);
+  }
+
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 12.5px;
+    font-size: 14px;
   }
 
   .yz-layout--about .yz-intro,
