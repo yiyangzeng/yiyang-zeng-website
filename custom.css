@@ -799,6 +799,7 @@ body:has(.yz-site) .page-section:first-child {
     font-size: 16px;
   }
 
+  /* Each bracket group must be one flex item (a or .yz-bracketed-link). */
   .yz-work-links {
     display: flex;
     flex-wrap: wrap;
@@ -806,7 +807,8 @@ body:has(.yz-site) .page-section:first-child {
     row-gap: 0.35em;
   }
 
-  .yz-work-links a {
+  .yz-work-links > a,
+  .yz-work-links > .yz-bracketed-link {
     white-space: nowrap;
   }
 
