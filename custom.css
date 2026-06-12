@@ -735,32 +735,24 @@ body:has(.yz-site) .page-section:first-child {
   }
 
   .yz-layout--about .yz-theme-band {
-    padding: 16px 0 20px;
-    margin: 0 -16px;
-    overflow-x: auto;
-    overflow-y: visible;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    min-height: 148px;
-  }
-
-  .yz-layout--about .yz-theme-band::-webkit-scrollbar {
-    display: none;
+    padding: 20px 0 24px;
+    margin: 0;
+    overflow: hidden;
   }
 
   .yz-layout--about .yz-theme-band svg {
     display: block;
-    width: 1120px;
-    min-width: 1120px;
-    max-width: none;
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
     height: auto;
     margin: 0;
     transform: none;
   }
 
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 24px;
-    letter-spacing: 0.03em;
+    font-size: 13.5px;
+    letter-spacing: 0.055em;
   }
 
   .yz-layout--about .yz-sidebar,
@@ -859,7 +851,7 @@ body:has(.yz-site) .page-section:first-child {
 
   .yz-layout--about .yz-intro,
   .yz-layout--about .yz-bio {
-    font-size: 19.5px;
+    font-size: 18.5px;
     line-height: 1.6;
   }
 
@@ -906,16 +898,12 @@ body:has(.yz-site) .page-section:first-child {
     display: none;
   }
 
-  .yz-layout--about .yz-theme-band {
-    min-height: 152px;
-  }
-
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 25px;
+    font-size: 12.5px;
   }
 
   .yz-layout--about .yz-intro,
   .yz-layout--about .yz-bio {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
