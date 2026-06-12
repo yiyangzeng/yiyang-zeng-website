@@ -737,23 +737,23 @@ body:has(.yz-site) .page-section:first-child {
   .yz-layout--about .yz-theme-band {
     padding: 24px 0 28px;
     overflow: visible;
-    min-height: calc((100vw - 32px) * 136 / 1120 * 1.9);
+    min-height: calc((100vw - 32px) * 136 / 1120 * 2.45);
   }
 
   .yz-layout--about .yz-theme-band svg {
     display: block;
-    width: calc(100% / 1.9);
+    width: calc(100% / 2.45);
     min-width: 0;
     max-width: none;
     max-height: none;
     margin: 0;
-    transform: scale(1.9);
+    transform: scale(2.45);
     transform-origin: top left;
   }
 
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 16px;
-    letter-spacing: 0.05em;
+    font-size: 18px;
+    letter-spacing: 0.04em;
   }
 
   .yz-layout--about .yz-sidebar,
@@ -807,8 +807,15 @@ body:has(.yz-site) .page-section:first-child {
     font-size: 16px;
   }
 
-  .yz-work-links .yz-bracketed-link + .yz-bracketed-link::before {
-    content: " ";
+  .yz-work-links {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.45em;
+    row-gap: 0.35em;
+  }
+
+  .yz-work-links a {
+    white-space: nowrap;
   }
 
   .yz-layout--about .yz-sidebar {
@@ -845,8 +852,8 @@ body:has(.yz-site) .page-section:first-child {
 
   .yz-layout--about .yz-intro,
   .yz-layout--about .yz-bio {
-    font-size: 23.5px;
-    line-height: 1.64;
+    font-size: 21.5px;
+    line-height: 1.62;
   }
 
   .yz-layout--about .yz-contact {
@@ -893,25 +900,20 @@ body:has(.yz-site) .page-section:first-child {
   }
 
   .yz-layout--about .yz-theme-band {
-    min-height: calc((100vw - 32px) * 136 / 1120 * 1.75);
+    min-height: calc((100vw - 32px) * 136 / 1120 * 2.55);
   }
 
   .yz-layout--about .yz-theme-band svg {
-    width: calc(100% / 1.75);
-    transform: scale(1.75);
+    width: calc(100% / 2.55);
+    transform: scale(2.55);
   }
 
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 15px;
-  }
-
-  .yz-layout--about .yz-portrait img {
-    width: min(268px, 86vw);
-    height: min(268px, 86vw);
+    font-size: 17px;
   }
 
   .yz-layout--about .yz-intro,
   .yz-layout--about .yz-bio {
-    font-size: 22.5px;
+    font-size: 21px;
   }
 }
