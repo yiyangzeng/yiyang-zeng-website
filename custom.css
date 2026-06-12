@@ -735,13 +735,13 @@ body:has(.yz-site) .page-section:first-child {
   }
 
   .yz-layout--about .yz-theme-band {
-    padding: 18px 0 22px;
+    padding: 16px 0 20px;
     margin: 0 -16px;
     overflow-x: auto;
     overflow-y: visible;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    min-height: 118px;
+    min-height: 148px;
   }
 
   .yz-layout--about .yz-theme-band::-webkit-scrollbar {
@@ -750,8 +750,8 @@ body:has(.yz-site) .page-section:first-child {
 
   .yz-layout--about .yz-theme-band svg {
     display: block;
-    width: 780px;
-    min-width: 780px;
+    width: 1120px;
+    min-width: 1120px;
     max-width: none;
     height: auto;
     margin: 0;
@@ -759,8 +759,8 @@ body:has(.yz-site) .page-section:first-child {
   }
 
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 21px;
-    letter-spacing: 0.035em;
+    font-size: 24px;
+    letter-spacing: 0.03em;
   }
 
   .yz-layout--about .yz-sidebar,
@@ -859,8 +859,8 @@ body:has(.yz-site) .page-section:first-child {
 
   .yz-layout--about .yz-intro,
   .yz-layout--about .yz-bio {
-    font-size: 21.5px;
-    line-height: 1.62;
+    font-size: 19.5px;
+    line-height: 1.6;
   }
 
   .yz-layout--about .yz-contact {
@@ -906,17 +906,16 @@ body:has(.yz-site) .page-section:first-child {
     display: none;
   }
 
-  .yz-layout--about .yz-theme-band svg {
-    width: 840px;
-    min-width: 840px;
+  .yz-layout--about .yz-theme-band {
+    min-height: 152px;
   }
 
   .yz-layout--about .yz-theme-band .lbl {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   .yz-layout--about .yz-intro,
   .yz-layout--about .yz-bio {
-    font-size: 21px;
+    font-size: 19px;
   }
 }
