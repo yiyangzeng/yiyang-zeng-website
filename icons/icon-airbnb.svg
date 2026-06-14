@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 82" fill="none" aria-hidden="true">
+  <defs>
+    <style>
+      .s { stroke: #8a8072; stroke-width: 0.85; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .fill-accent { fill: #b04a2f; opacity: 0.65; }
+      .fill-ink { fill: #3a342a; opacity: 0.14; }
+    </style>
+  </defs>
+  <rect class="s" x="52" y="12" width="36" height="48" rx="3"/>
+  <rect class="fill-ink" x="56" y="16" width="28" height="20" rx="1.5"/>
+  <path class="s" d="M60 32 L70 24 L80 32 L80 52 L60 52 Z"/>
+  <rect class="s" x="66" y="38" width="8" height="14"/>
+  <circle class="fill-accent" cx="70" cy="28" r="2"/>
+  <path class="s" d="M8 56 L28 36 L48 56 Z"/>
+  <rect class="s" x="8" y="56" width="40" height="22" rx="1"/>
+  <rect class="s" x="22" y="64" width="10" height="14"/>
+  <rect class="fill-ink" x="14" y="60" width="8" height="8" rx="0.5"/>
+  <rect class="fill-ink" x="34" y="60" width="8" height="8" rx="0.5"/>
+</svg>

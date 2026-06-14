@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 78" fill="none" aria-hidden="true">
+  <defs>
+    <style>
+      .s { stroke: #8a8072; stroke-width: 0.85; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .s-thin { stroke: #8a8072; stroke-width: 0.65; fill: none; stroke-linecap: round; }
+      .fill-ink { fill: #3a342a; opacity: 0.14; }
+    </style>
+  </defs>
+  <line class="s" x1="44" y1="62" x2="44" y2="78"/>
+  <rect class="s" x="8" y="8" width="72" height="54" rx="2"/>
+  <rect class="fill-ink" x="12" y="12" width="64" height="46" rx="1"/>
+  <line class="s-thin" x1="18" y1="26" x2="70" y2="26"/>
+  <line class="s-thin" x1="18" y1="36" x2="58" y2="36"/>
+  <line class="s-thin" x1="18" y1="46" x2="48" y2="46"/>
+</svg>

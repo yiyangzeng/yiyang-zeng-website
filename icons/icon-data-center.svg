@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104 90" fill="none" aria-hidden="true">
+  <defs>
+    <style>
+      .s { stroke: #8a8072; stroke-width: 0.85; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .s-thin { stroke: #8a8072; stroke-width: 0.65; fill: none; stroke-linecap: round; }
+      .fill-ink { fill: #3a342a; opacity: 0.14; }
+      .fill-panel { fill: #8a8072; opacity: 0.08; }
+    </style>
+  </defs>
+  <rect class="fill-panel" x="4" y="34" width="96" height="44" rx="2"/>
+  <rect class="s" x="4" y="34" width="96" height="44" rx="2"/>
+  <rect class="s" x="14" y="42" width="18" height="12" rx="1"/>
+  <rect class="s" x="36" y="42" width="18" height="12" rx="1"/>
+  <rect class="s" x="58" y="42" width="18" height="12" rx="1"/>
+  <rect class="s" x="80" y="42" width="12" height="12" rx="1"/>
+  <rect class="s" x="14" y="58" width="18" height="12" rx="1"/>
+  <rect class="s" x="36" y="58" width="18" height="12" rx="1"/>
+  <rect class="s" x="58" y="58" width="18" height="12" rx="1"/>
+  <rect class="s" x="80" y="58" width="12" height="12" rx="1"/>
+  <rect class="fill-ink" x="22" y="46" width="10" height="6" rx="0.5"/>
+  <rect class="fill-ink" x="44" y="46" width="10" height="6" rx="0.5"/>
+  <rect class="fill-ink" x="66" y="46" width="10" height="6" rx="0.5"/>
+  <rect class="s" x="38" y="22" width="28" height="12" rx="1"/>
+  <line class="s-thin" x1="44" y1="28" x2="44" y2="34"/>
+  <line class="s-thin" x1="52" y1="28" x2="52" y2="34"/>
+  <line class="s-thin" x1="60" y1="28" x2="60" y2="34"/>
+  <rect class="s" x="68" y="24" width="10" height="10" rx="1"/>
+  <rect class="s" x="82" y="24" width="10" height="10" rx="1"/>
+  <line class="s-thin" x1="71" y1="27" x2="75" y2="27"/>
+  <line class="s-thin" x1="85" y1="27" x2="89" y2="27"/>
+</svg>
