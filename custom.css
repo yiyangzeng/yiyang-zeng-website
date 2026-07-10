@@ -866,16 +866,6 @@ body:has(.yz-site) .page-section:first-child {
     font-size: 16px;
   }
 
-  .yz-work-title strong > a {
-    /* Prefer readable multi-line titles over heavy per-line underlines */
-    border-bottom-color: transparent;
-  }
-
-  .yz-work-title strong > a:hover,
-  .yz-work-title strong > a:active {
-    border-bottom-color: var(--yz-accent);
-  }
-
   /* Each bracket group must be one flex item (a or .yz-bracketed-link). */
   .yz-work-links {
     display: flex;
