@@ -532,6 +532,12 @@ body:has(.yz-site) .page-section:first-child {
   margin-top: 0;
 }
 
+/* Research: clearer break before Other writing (no border-top) */
+.yz-layout--solo > .yz-main > .yz-subsection:not(.yz-subsection-first) {
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
 /* Jennifer-style work entries */
 .yz-work {
   margin-bottom: 26px;
@@ -552,6 +558,20 @@ body:has(.yz-site) .page-section:first-child {
 
 .yz-work-title strong {
   font-weight: 600;
+}
+
+/* Linked paper / article titles (e.g. Conversation) — site ink, not default blue */
+.yz-work-title strong > a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--yz-accent-soft);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.yz-work-title strong > a:hover {
+  color: var(--yz-accent);
+  border-bottom-color: var(--yz-accent);
 }
 
 .yz-coauthor {
@@ -626,6 +646,11 @@ body:has(.yz-site) .page-section:first-child {
   margin: 0;
   font-size: 15px;
   line-height: 1.65;
+  /* Gap-only between bracket links (desktop + mobile) */
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.45em;
+  row-gap: 0.35em;
 }
 
 .yz-work-links a {
@@ -633,6 +658,11 @@ body:has(.yz-site) .page-section:first-child {
   text-decoration: underline;
   text-decoration-color: var(--yz-accent-soft);
   text-underline-offset: 2px;
+}
+
+.yz-work-links > a,
+.yz-work-links > .yz-bracketed-link {
+  white-space: nowrap;
 }
 
 .yz-bracketed-link {
@@ -836,6 +866,16 @@ body:has(.yz-site) .page-section:first-child {
     font-size: 16px;
   }
 
+  .yz-work-title strong > a {
+    /* Prefer readable multi-line titles over heavy per-line underlines */
+    border-bottom-color: transparent;
+  }
+
+  .yz-work-title strong > a:hover,
+  .yz-work-title strong > a:active {
+    border-bottom-color: var(--yz-accent);
+  }
+
   /* Each bracket group must be one flex item (a or .yz-bracketed-link). */
   .yz-work-links {
     display: flex;
@@ -847,6 +887,10 @@ body:has(.yz-site) .page-section:first-child {
   .yz-work-links > a,
   .yz-work-links > .yz-bracketed-link {
     white-space: nowrap;
+  }
+
+  .yz-layout--solo > .yz-main > .yz-subsection:not(.yz-subsection-first) {
+    margin-top: 22px;
   }
 
   .yz-layout--about .yz-sidebar {
