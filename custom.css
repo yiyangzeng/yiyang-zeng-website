@@ -669,6 +669,27 @@ body:has(.yz-site) .page-section:first-child {
   white-space: nowrap;
 }
 
+/* Long press list: one bracket group; allow wrap mid-list */
+.yz-work-links > .yz-bracketed-link--wrap {
+  white-space: normal;
+}
+
+/* Inline flow so [SSRN] and [Fortune; …] share the first line */
+.yz-work-links--flow {
+  display: block;
+}
+
+.yz-work-links--flow > a,
+.yz-work-links--flow > .yz-bracketed-link {
+  display: inline;
+  white-space: normal;
+}
+
+/* About press sentence: site link underline only (no second decoration) */
+.yz-press a {
+  text-decoration: none;
+}
+
 .yz-work-links a:hover {
   text-decoration-color: var(--yz-accent);
 }
