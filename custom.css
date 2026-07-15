@@ -900,6 +900,18 @@ body:has(.yz-site) .page-section:first-child {
     white-space: nowrap;
   }
 
+  /* Long press list: keep inline wrap on mobile (overrides flex/nowrap above) */
+  .yz-work-links--flow {
+    display: block;
+  }
+
+  .yz-work-links--flow > a,
+  .yz-work-links--flow > .yz-bracketed-link,
+  .yz-work-links > .yz-bracketed-link--wrap {
+    display: inline;
+    white-space: normal;
+  }
+
   .yz-layout--solo > .yz-main > .yz-subsection:not(.yz-subsection-first) {
     margin-top: 22px;
   }
