@@ -685,6 +685,14 @@ body:has(.yz-site) .page-section:first-child {
   white-space: normal;
 }
 
+.yz-nowrap {
+  white-space: nowrap;
+}
+
+.yz-ajc-short {
+  display: none;
+}
+
 /* About press sentence: site link underline only (no second decoration) */
 .yz-press a {
   text-decoration: none;
@@ -910,6 +918,35 @@ body:has(.yz-site) .page-section:first-child {
   .yz-work-links > .yz-bracketed-link--wrap {
     display: inline;
     white-space: normal;
+  }
+
+  .yz-work-links--flow.yz-dc-media {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.45em;
+    row-gap: 0;
+  }
+
+  .yz-dc-media-lead {
+    order: 1;
+    flex: 0 0 100%;
+    white-space: nowrap;
+  }
+
+  .yz-dc-media-rest {
+    order: 2;
+  }
+
+  .yz-dc-ssrn {
+    order: 3;
+  }
+
+  .yz-ajc-full {
+    display: none;
+  }
+
+  .yz-ajc-short {
+    display: inline;
   }
 
   .yz-layout--solo > .yz-main > .yz-subsection:not(.yz-subsection-first) {
